@@ -5,79 +5,76 @@ html {
   font-family: roboto;
 }
 
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-body{
-  display:flex;
-  flex-direction: column;
-  /* min-height: 100vh; */
-  margin: 0;
-  overflow: hidden;
-  flex: 1;
+body {
   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding-bottom: 75px; /* room for fixed footer */
 }
 
-.placeholder{
-  display:flex;
-  color:white;
-  justify-content:center;
+.placeholder {
+  display: flex;
+  color: white;
+  justify-content: center;
   align-items: center;
   background-color: grey;
-  width:20%;
-  height:10%;
+  width: 20%;
+  height: 100px;
 }
 
-
-.call{
-  display:flex;
-    min-height: 50px;
-    background-color:#3882F6;
-    justify-content: center;
+.call {
+  display: flex;
+  min-height: 50px;
+  background-color: #3882F6;
+  justify-content: center;
+  align-items: center;
 }
 
-button{
-    display:flex;
-    color: white;
-    background-color:#3882F6;
-    padding: 8px 16px;
-    text-decoration: none;
-    margin: 20px;
-    border: 1px solid white;
-    align-items: center;
+button {
+  display: flex;
+  color: white;
+  background-color: #3882F6;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 20px;
+  border: 1px solid white;
+  align-items: center;
 }
 
-.button2{
-  display:flex;
-    color: white;
-    background-color:#3882F6;
-    padding: 8px 16px;
-    text-decoration: none;
-    margin: 20px;
-    border: 1px solid white;
-    align-items: center;
-
+.button2 {
+  display: flex;
+  color: white;
+  background-color: #3882F6;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 20px;
+  border: 1px solid white;
+  align-items: center;
 }
-
 
 .header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 0 16px;
   font-size: 16px;
   font-weight: 900;
-  background-color: #1F2937 ;
-  height:75px;
+  background-color: #1f2937;
+  height: 75px;
 }
 
+.header ul {
+  display: flex;
+}
 
-.footer{
-  background-color:#1F2937;
-  color:white;
-  align-items: center;
+.footer {
+  background-color: #1f2937;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,60 +83,54 @@ button{
   bottom: 0;
   left: 0;
   right: 0;
-  height:75px
+  height: 75px;
 }
 
-.content{
-  height:200px;
-
-  background-color:#1F2937;
-  color:white;
-  position: fixed;
-  width:100%;
-  margin:0;
-  font-size:50px;
-
+.content {
+  background-color: #1F2937;
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: 40px 16px;
+  font-size: 24px;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
-  justify-content:center;
-  align-items:center;
+  padding: 0;
 }
 
 li {
-  justify-content:flex-end;
-  align-items:center;
-  color:black;
-  display:flex;
+  display: flex;
+  align-items: center;
+  color: black;
 }
-
 
 li a {
   padding: 10px 20px;
   text-decoration: none;
-  display:flex;
-  list-style-type: none;
   color: white;
-
 }
 
 .container {
-  display:flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
 }
 
-.lilBox{
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lilBox {
   border-radius: 3px;
   border: 1px solid blue;
   padding: 50px;
-  margin:20px;
+  margin: 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-
 }
 
 .card {
@@ -147,39 +138,40 @@ li a {
   padding: 16px;
   font-size: 24px;
   width: 100px;
-
 }
 
-.information{
-    font-size: 36px;
-    Color: #1F2937;
-    font-weight: 900;
-    margin:20px;
-    /* font-size:25ps; */
+.information {
+  font-size: 36px;
+  color: #1F2937;
+  font-weight: 900;
+  margin: 20px;
 }
 
-.quote{
-  display:flex;
-    background-color: #E5E7EB;
-    color: #1F2937;
-    font-size: 26px;
-    padding:25px 150px;
-    font-weight: 300;
-    font-style: italic;
-    min-height:300px;
-    align-items: center;
-    width:100%;
+.quote {
+  display: flex;
+  flex-direction: column;
+  background-color: #E5E7EB;
+  color: #1F2937;
+  font-size: 26px;
+  padding: 25px 150px;
+  font-weight: 300;
+  font-style: italic;
+  min-height: 300px;
+  justify-content: center;
+  width: 100%;
 }
 
-.quote-name{
-    color:black;
-    font-weight: 750;
-    Justify-content: flex-end;
-    align-items: flex-end;
+.quote-text {
+  margin: 0;
 }
 
-img{
-  display:flex;
-  justify-content:flex-start;
-  margin-left: 10%;
+.quote-name {
+  color: black;
+  font-weight: 750;
+  align-self: flex-end;
+  margin-top: 16px;
+}
+
+img {
+  height: 40px;
 }
